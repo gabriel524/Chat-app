@@ -76,17 +76,3 @@ npm install @react-navigation/native @react-navigation/stack
 expo install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
 ```
 
-### Set up Android Studio as Android Emulator
-
-1. Download Android Studio
-2. Make sure 'Android Virtual Device' is installed
-3. Add Android SDK Location to ~/.zshrc file
-
-```
-export ANDROID_SDK=/Users/myuser/Library/Android/sdk
-export PATH=/Users/myuser/Library/Android/sdk/platform-tools:$PATH
-```
-
-4. Create virtual device and click play to start
-
-5. Select 'Run app on Android' in Expo to run app on virtual device
