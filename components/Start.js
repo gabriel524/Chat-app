@@ -23,12 +23,14 @@ export default class Start extends Component {
         >
           <Text style={styles.title}>Chat App</Text>
           <View style={styles.box}>
+            {/*Allow user to input name to display in chat*/}
             <TextInput
               style={[styles.input, styles.text]}
               onChangeText={(name) => this.setState({ name })}
               value={this.state.name}
               placeholder="Enter your name"
             />
+            {/*Allow user to pick background color on touch*/}
             <View>
               <Text style={styles.text}>Choose a Background Color</Text>
               <View style={[styles.colors, styles.colorWrapper]}>
@@ -56,6 +58,7 @@ export default class Start extends Component {
                     this.setState({ color: purple.backgroundColor })
                   }
                 />
+                {/*Allow user to enter chat*/}
                 <TouchableOpacity
                   style={[
                     styles.color,
@@ -64,7 +67,9 @@ export default class Start extends Component {
                       ? styles.colorSelected
                       : {},
                   ]}
-                  onPress={() => this.setState({ color: darkgray.backgroundColor })}
+                  onPress={() =>
+                    this.setState({ color: darkgray.backgroundColor })
+                  }
                 />
                 <TouchableOpacity
                   style={[
