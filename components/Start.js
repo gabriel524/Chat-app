@@ -30,7 +30,7 @@ export default class Start extends Component {
               placeholder="Enter your name"
             />
             <View>
-              <Text style={styles.text}>Choose a background Color of Your Choose</Text>
+              <Text style={styles.text}>Choose a Background Color</Text>
               <View style={[styles.colors, styles.colorWrapper]}>
                 <TouchableOpacity
                   style={[
@@ -132,6 +132,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
 
+  green: {
+    backgroundColor: "#B9C6AE",
+  },
+
   box: {
     backgroundColor: "#fff",
     width: "88%",
@@ -165,7 +169,7 @@ const styles = StyleSheet.create({
   button: {
     height: 50,
     width: "50%",
-    backgroundColor: "brown",
+    backgroundColor: "#757083",
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 10,
