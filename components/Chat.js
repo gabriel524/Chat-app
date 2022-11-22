@@ -26,12 +26,12 @@ export default class Chat extends React.Component {
 
     //Set up Firebase
     const firebaseConfig = {
-      apiKey: "AIzaSyDq6vxUYQVBx5g8kH_lyCNPOatMkYdkxIA",
-      authDomain: "chap-app-2fb11.firebaseapp.com",
-      projectId: "chap-app-2fb11",
-      storageBucket: "chap-app-2fb11.appspot.com",
-      messagingSenderId: "262879552333",
-      appId: "1:262879552333:web:521d311295afa3b614cd04",
+      apiKey: "AIzaSyBiVYyEDLZYQUwoyJJm2wEPh-2x1P65COU",
+      authDomain: "chat-app-7652d.firebaseapp.com",
+      projectId: "chat-app-7652d",
+      storageBucket: "chat-app-7652d.appspot.com",
+      messagingSenderId: "531456172415",
+      appId: "1:531456172415:web:031bd1125b1c81df8d3a4a",
     };
 
     if (!firebase.apps.length) {
