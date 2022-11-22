@@ -84,7 +84,7 @@ export default class Chat extends React.Component {
                 createdAt: new Date(),
                 user: {
                   _id: 2,
-                  name: "Gabriel",
+                  name: "",
                   avatar: "https://placeimg.com/140/140/any",
                 },
               },
