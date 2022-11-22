@@ -77,24 +77,7 @@ export default class Chat extends React.Component {
           }
           this.setState({
             uid: user.uid,
-            messages: [
-              {
-                _id: 1,
-                text: "Hello developer",
-                createdAt: new Date(),
-                user: {
-                  _id: 2,
-                  name: "",
-                  avatar: "https://placeimg.com/140/140/any",
-                },
-              },
-              {
-                _id: 2,
-                text: "You've entered the chat",
-                createdAt: new Date(),
-                system: true,
-              },
-            ],
+            messages: [],
             user: {
               _id: user.uid,
               name: name,
