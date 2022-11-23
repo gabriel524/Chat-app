@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View, Text, Platform, KeyboardAvoidingView } from "react-native";
 import { GiftedChat, Bubble, InputToolbar } from "react-native-gifted-chat";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import NetInfo from "@react-native-community/netinfo";
+import NetInfo from '@react-native-community/netinfo';
 import CustomActions from "./CustomActions";
 import { ActionSheetProvider } from "@expo/react-native-action-sheet";
 import MapView from "react-native-maps";
