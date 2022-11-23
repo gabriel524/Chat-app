@@ -20,7 +20,7 @@ export default class Chat extends React.Component {
         avatar: "",
         name: "",
       },
-      loggedInText: "Please wait, you are getting logged in",
+      loggedInText: "",
       image: null,
       location: null,
       isConnected: false,
@@ -115,20 +115,7 @@ export default class Chat extends React.Component {
       }
     );
   }
-
-  addMessage = () => {
-    const message = this.state.messages[0];
-    this.referenceChatMessages.add({
-      uid: this.state.uid,
-      _id: message._id,
-      text: message.text || "",
-      createdAt: message.createdAt,
-      user: message.user,
-      image: message.image || null,
-      location: message.location || null,
-    });
-  };
-
+  
   async saveMessages() {
     try {
       await AsyncStorage.setItem(
@@ -150,6 +137,19 @@ export default class Chat extends React.Component {
       console.log(error.message);
     }
   }
+
+  addMessage = () => {
+    const message = this.state.messages[0];
+    this.referenceChatMessages.add({
+      uid: this.state.uid,
+      _id: message._id,
+      text: message.text || "",
+      createdAt: message.createdAt,
+      user: message.user,
+      image: message.image || null,
+      location: message.location || null,
+    });
+  };
 
   //Allows bubble customization
   renderBubble(props) {
