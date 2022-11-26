@@ -8,10 +8,6 @@ This is a native mobile app built using React Native that allows users to enter 
 To build a chat app for mobile devices using React Native. The app will provide users with a chat interface and options to share images and their
 location.
 
-<!-- ## API used
-
-[Google Calender API](https://developers.google.com/calendar) -->
-
 ## Tech used  
 - React Native
 - Expo App
@@ -21,7 +17,7 @@ location.
 - Google Firebase
 
 ### dependencies:
-
+```
 "@expo/react-native-action-sheet": "^4.0.1",
     "@expo/webpack-config": "^0.17.3",
     "@react-native-async-storage/async-storage": "~1.17.3",
@@ -47,8 +43,9 @@ location.
     "react-native-screens": "~3.18.0",
     "react-native-web": "~0.18.9",
     "react-navigation": "^4.4.4"
+    ```
 
-## User Stories
+### User Stories
 
 1. As a new user, I want to be able to easily enter a chat room so I can quickly start talking to my
 friends and family.
@@ -106,39 +103,42 @@ expo install react-native-reanimated react-native-gesture-handler react-native-s
 
 ### Instruction for running this project
 
-Before doing anything, of course, make sure Node and npm are available. To install node, visit : https://nodejs.org/en/download/
+In order to successfully run the app, you will need Node and npm. Meanwhile to install node please visit: https://nodejs.org/en/download/
 
-Then follow steps below
+After the installation, you can then follow these steps below
 
-Run command to clone repository:
+1. First, run the below command to clone the repository to your computer:
 
 ```
-$ git clone https://github.com/navi5599/Chat_App.git
+$ git clone https://github.com/gabriel524/Chat-app.git
 ```
 
-After cloning repo, you should install all dependencies,starting with Expo cli:
+2. After cloning the repository, you should then install all dependencies, starting with Expo cli as shown below:
 
 ```
 $ npm install expo-cli --global
 ```
 
-In your root project folder, just run
+3. Then in your root project folder, you can run:
 
 ```
 $ npm install
 ```
 
-After that, head over to https://expo.dev/ , and sign up. Also make sure you download your Expo App from your relevant app store for your device (iOS or Android) and install it.
+4. After that, head over to https://expo.dev/ , and sign up. Also make sure to download the Expo App from your relevant app store on your smartphone device such as (iOS or Android).
 
-Back to terminal, head over to your project folder and run
+5. After that go to your system terminal navigate into your project root folder using "cd" and then run
 
 ```
 $ expo start
 ```
 
-Expo will then create project for you,and provide you with scannable QR code. Use your phone to scan QR code, and run it with Expo App.
+6. Expo will then create project for you,and provide you with scannable QR code. 
 
-Create databse
+7. Use your phone to scan QR code, and run it with Expo App.
+
+
+#### Create databse
 
 1. Go to [Google Firebase](https://firebase.google.com/) and sing in with your Google account.
 2. Next go to the Firebase console and create a new project (**Create Project**).
@@ -153,7 +153,7 @@ Create databse
 
 ##### App Screenshot:
 
-<img src="../assets/background-img.png" height="580" width="260" display="inline-block" margin="0 auto">
+<img src="/assets/background-img.png" height="580" width="260" display="inline-block" margin="0 auto">
 
 ---
 
