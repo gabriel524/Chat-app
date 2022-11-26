@@ -17,6 +17,7 @@ location.
 - Google Firebase
 
 ### dependencies:
+
 ```
 "@expo/react-native-action-sheet": "^4.0.1",
     "@expo/webpack-config": "^0.17.3",
@@ -43,6 +44,7 @@ location.
     "react-native-screens": "~3.18.0",
     "react-native-web": "~0.18.9",
     "react-navigation": "^4.4.4"
+
     ```
 
 ### User Stories
@@ -59,9 +61,7 @@ time.
 reader so that I can engage with a chat interface
 
 
-## Development Process
-
-### Instruction for seting up Expo as Development Environment locally
+#### Instruction for seting up Expo as Development Environment locally
 
 1. Install Expo CLI
 
@@ -86,7 +86,7 @@ cd [projectname]
 ```
 npm start or expo start
 ```
-### Install React Navigation library to navigate between screens
+#### Install React Navigation library to navigate between screens
 
 1. Navigate to project folder and run
 
@@ -99,8 +99,8 @@ npm install react-navigation
 ```
 npm install @react-navigation/native @react-navigation/stack
 expo install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
-```
 
+```
 ### Instruction for running this project
 
 In order to successfully run the app, you will need Node and npm. Meanwhile to install node please visit: https://nodejs.org/en/download/
@@ -137,7 +137,6 @@ $ expo start
 
 7. Use your phone to scan QR code, and run it with Expo App.
 
-
 #### Create databse
 
 1. Go to [Google Firebase](https://firebase.google.com/) and sing in with your Google account.
@@ -151,7 +150,7 @@ $ expo start
 
 ---
 
-##### App Screenshot:
+ ### App Screenshot:
 
 <img src="/assets/background-img.png" height="580" width="260" display="inline-block" margin="0 auto">
 
