@@ -150,8 +150,10 @@ $ expo start
 ---
 
  ### App Screenshot:
-
+<p align="center">
+<img src="/images/img2.jpg" height="580" width="260" display="inline-block" margin="0 auto">
 <img src="/images/img1.jpg" height="580" width="260" display="inline-block" margin="0 auto">
+</p>
 
 ---
 
