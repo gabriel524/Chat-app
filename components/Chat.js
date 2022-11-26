@@ -82,6 +82,7 @@ export default class Chat extends React.Component {
               _id: user.uid,
               name: name,
             },
+            
             loggedInText: "You are now logged in",
           });
           this.unsubscribe = this.referenceChatMessages

@@ -5,6 +5,7 @@ import * as Location from "expo-location";
 import * as ImagePicker from "expo-image-picker";
 import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import { connectActionSheet } from "@expo/react-native-action-sheet";
+
 import firebase from "firebase";
 import "firebase/firestore";
 
@@ -13,7 +14,7 @@ export default class CustomActions extends React.Component {
 
   imagePicker = async () => {
     // expo permission
-    const { status } = await Permissions.askAsync(Permissions.CAMERA_ROLL);
+    const { status } = await Permissions.askAsync(Permissions.MEDIA_LIBRARY);
     try {
       if (status === "granted") {
         // pick image
@@ -35,9 +36,9 @@ export default class CustomActions extends React.Component {
 
   takePhoto = async () => {
     const { status } = await Permissions.askAsync(
-      Permissions.CAMERA,
-      Permissions.CAMERA_ROLL
-    );
+      Permissions.MEDIA_LIBRARY,
+      Permissions.CAMERA
+    );  
     try {
       if (status === "granted") {
         const result = await ImagePicker.launchCameraAsync({
